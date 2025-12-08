@@ -1,6 +1,6 @@
 /* Fundo da página inicial */
 .hero {
-    background-image: url('img/fundo.jpg');
+    background-image: url('img/fundoNovo.jpg');
     background-size: cover;
     background-position: center;
     height: 60vh;
