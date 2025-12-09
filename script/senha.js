@@ -1,5 +1,3 @@
-// senha.js
-
 const senhaCorreta = "35842515";
 function verificarSenha() {
     const senha = document.getElementById("senhaDigitada").value;
