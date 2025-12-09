@@ -90,9 +90,11 @@
             <h2>🔒 Acesso Restrito</h2>
             <p>Digite a senha para acessar o módulo:</p>
 
+        <form onsubmit="verificarSenha(); return false;">
             <input type="password" id="senhaDigitada" placeholder="Senha">
 
             <button onclick="verificarSenha()">Entrar</button>
+        </form>
 
             <p id="erro" class="erro"></p>
         </div>
