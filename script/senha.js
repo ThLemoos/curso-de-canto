@@ -1,10 +1,10 @@
-const senha = "modulo1";
+ const senhaCorreta = "1234";
 
     function pedirSenha() {
-        const resposta = prompt("Digite a senha do Módulo 1:");
-        if (resposta !== senha) {
+        const senha = prompt("Digite a senha para acessar este módulo:");
+        if (senha !== senhaCorreta) {
             alert("Senha incorreta!");
-            window.location.href = "index.html";
+            window.location.href = "index.html"; // volta para a página inicial
         }
     }
 
