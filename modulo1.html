@@ -9,14 +9,13 @@
     <script src="script/senha.js"></script>
 </head>
 <body class="pagina1">
+    
     <a class="voltar" href="index.html">Voltar</a>
+    
     <div class="caixa-conteudo">
-        <body class="pagina1">
-            
-    <!-- TELA DE SENHA -->
-    <div id="telaSenha" class="overlay">
-        <style>
-            /* ===== TELA DE BLOQUEIO ===== */
+
+    <style>
+
 .overlay {
     position: fixed;
     top: 0;
@@ -32,7 +31,6 @@
     transition: opacity 0.3s ease;
 }
 
-/* Caixa do login */
 .box-login {
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(15px);
@@ -45,13 +43,11 @@
     border: 1px solid rgba(255,255,255,0.25);
 }
 
-/* Título da caixa */
 .box-login h2 {
     font-size: 26px;
     margin-bottom: 10px;
 }
 
-/* Campo de senha */
 .box-login input {
     width: 100%;
     padding: 12px;
@@ -64,7 +60,6 @@
     text-align: center;
 }
 
-/* Botão */
 .box-login button {
     width: 100%;
     margin-top: 15px;
@@ -82,14 +77,16 @@
     background: #ff2222;
 }
 
-/* Mensagem de erro */
 .erro {
     margin-top: 10px;
     color: #ffb3b3;
     opacity: 0;
     transition: 0.3s;
 }
-        </style>
+
+    </style>    
+
+    <div id="telaSenha" class="overlay">
         <div class="box-login">
             <h2>🔒 Acesso Restrito</h2>
             <p>Digite a senha para acessar o módulo:</p>
