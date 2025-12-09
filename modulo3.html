@@ -14,77 +14,75 @@
 
     <div class="caixa-conteudo">
 
-         <style>
+    <style>
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.80);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+            backdrop-filter: blur(5px);
+            transition: opacity 0.3s ease;
+        }
 
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.80);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10000;
-    backdrop-filter: blur(5px);
-    transition: opacity 0.3s ease;
-}
+        .box-login {
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(15px);
+            padding: 30px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 350px;
+            text-align: center;
+            color: white;
+            border: 1px solid rgba(255,255,255,0.25);
+        }
 
-.box-login {
-    background: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(15px);
-    padding: 30px;
-    border-radius: 20px;
-    width: 90%;
-    max-width: 350px;
-    text-align: center;
-    color: white;
-    border: 1px solid rgba(255,255,255,0.25);
-}
+        .box-login h2 {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
 
-.box-login h2 {
-    font-size: 26px;
-    margin-bottom: 10px;
-}
+        .box-login input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            background: rgba(255,255,255,0.25);
+            color: white;
+            font-size: 18px;
+            text-align: center;
+        }
 
-.box-login input {
-    width: 100%;
-    padding: 12px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    background: rgba(255,255,255,0.25);
-    color: white;
-    font-size: 18px;
-    text-align: center;
-}
+        .box-login button {
+            width: 100%;
+            margin-top: 15px;
+            padding: 12px;
+            background: #ff4747;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
 
-.box-login button {
-    width: 100%;
-    margin-top: 15px;
-    padding: 12px;
-    background: #ff4747;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
-    transition: 0.2s;
-}
+        .box-login button:hover {
+            background: #ff2222;
+        }
 
-.box-login button:hover {
-    background: #ff2222;
-}
-
-.erro {
-    margin-top: 10px;
-    color: #ffb3b3;
-    opacity: 0;
-    transition: 0.3s;
-}
-
-    </style>    
+        .erro {
+            margin-top: 10px;
+            color: #ffb3b3;
+            opacity: 0;
+            transition: 0.3s;
+        }
+    </style>
 
     <div id="telaSenha" class="overlay">
         <div class="box-login">
