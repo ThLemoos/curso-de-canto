@@ -1,11 +1,20 @@
- const senhaCorreta = "1234";
+// senha.js
 
-    function pedirSenha() {
-        const senha = prompt("Digite a senha para acessar este módulo:");
-        if (senha !== senhaCorreta) {
-            alert("Senha incorreta!");
-            window.location.href = "index.html"; // volta para a página inicial
-        }
+const senhaCorreta = "1234"; // troque a senha aqui
+
+function verificarSenha() {
+    const senha = document.getElementById("senhaDigitada").value;
+    const erro = document.getElementById("erro");
+
+    if (senha === senhaCorreta) {
+        document.getElementById("telaSenha").style.opacity = "0";
+
+        setTimeout(() => {
+            document.getElementById("telaSenha").style.display = "none";
+        }, 300);
+
+    } else {
+        erro.innerText = "Senha incorreta!";
+        erro.style.opacity = "1";
     }
-
-    pedirSenha();
+}
